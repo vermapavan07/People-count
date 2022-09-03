@@ -14,8 +14,10 @@ function increment(){
     countEl.innerText = count;
 }
 function save(){
-    let countStr = count + " - "
-    saveEl.textContent += countStr;
-    count = 0;
-    countEl.textContent = count;
+    if (count !=0){
+        let countStr = count + " - "
+        saveEl.textContent += countStr;
+        count = 0;
+        countEl.textContent = count;
+    }
 }
